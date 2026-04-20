@@ -60,7 +60,7 @@ def load_geojson():
         return None
 
 uploaded = st.sidebar.file_uploader("📂 Fichier CSV VeloGuard", type="csv")
-csv_local = sorted(Path(".").glob("boamp_voirie_*.csv"))
+csv_local = sorted(Path(".").glob("boamp_voirie_20260420.csv"))
 
 if uploaded:
     df = load(uploaded)
